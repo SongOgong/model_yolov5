@@ -1,0 +1,60 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./laundry/images/ 
+val: ./laundry/images/ 
+
+# number of classes
+nc: 49
+
+# class names
+names: [
+    '30C', 
+    '30C_mild', 
+    '40C', 
+    '40C_mild', 
+    '50C', 
+    '60C', 
+    '70C', 
+    '95C', 
+    'DO_NOT_wash', 
+    'hand_wash', 
+    'hand_wash_cold', 
+    'hand_wash_or_30C_mild', 
+    'machine_wash_cold', 
+    'DO_NOT_iron', 
+    'iron', 
+    'iron_high', 
+    'iron_low', 
+    'iron_medium', 
+    'iron_no_steam', 
+    'iron_warm', 
+    'bleach', 
+    'chlorine_bleach', 
+    'DO_NOT_bleach', 
+    'ONLY_non_chlorine_bleach', 
+    'ONLY_oxygen_bleach', 
+    'DO_NOT_tumble_dry', 
+    'drip_dry', 
+    'drip_dry_in_shade', 
+    'dry_flat', 
+    'dry_flat_in_shade', 
+    'line_dry', 
+    'line_dry_in_shade', 
+    'tumble_dry', 
+    'tumble_dry_high', 
+    'tumble_dry_low', 
+    'tumble_dry_medium', 
+    'tumble_dry_no_heat', 
+    'DO_NOT_dry_clean', 
+    'dry_clean', 
+    'dry_clean_any_solvent', 
+    'dry_clean_any_solvent_except_trichloroethylene', 
+    'dry_clean_low_heat', 
+    'dry_clean_mild', 
+    'dry_clean_no_stream', 
+    'dry_clean_ONLY', 
+    'dry_clean_petroleum_ONLY', 
+    'wet_clean', 
+    'DO_NOT_wring', 
+    'wring_gently'
+]
+
