@@ -1,8 +1,7 @@
 import sys
-sys.path.insert(0, '/home/ubuntu/model_yolov5/yolov5-master-2--main/yolov5-master')
+sys.path.insert(0, '/home/ubuntu/laundry3003/weights')
 import torch
 from pathlib import Path
-from models.common import DetectMultiBackend
 from flask import Flask, request, jsonify
 import requests
 from PIL import Image
@@ -12,7 +11,7 @@ import uuid
 
 
 # YOLOv5 모델 로드 (경로는 EC2에 클론한 리포지토리의 위치에 맞게 설정)
-model_path = Path('/home/ubuntu/model_yolov5/yolov5-master-2--main/yolov5-master/best.pt')
+model_path = Path('/home/ubuntu/laundry3003/weights/best.pt')
 model = torch.hub.load('ultralytics/yolov5', 'custom', path=str(model_path), force_reload=True)
 
 app = Flask(__name__)
