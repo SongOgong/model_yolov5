@@ -1,4 +1,5 @@
 import torch
+from models.common import DetectMultiBackend
 from flask import Flask, request, jsonify
 import requests
 from PIL import Image
