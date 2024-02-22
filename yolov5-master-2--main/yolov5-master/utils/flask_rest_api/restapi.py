@@ -7,7 +7,7 @@ import boto3
 import uuid
 
 # YOLOv5 모델 로드 (경로는 EC2에 클론한 리포지토리의 위치에 맞게 설정)
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='/home/ubuntu/laundry3003/weights/best.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='/home/ubuntu/model_yolov5/best.pt', force_reload=True)
 
 app = Flask(__name__)
 
