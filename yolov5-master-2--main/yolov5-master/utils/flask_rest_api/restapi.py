@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, '/home/ubuntu/model_yolov5')
+sys.path.insert(0, '/home/ubuntu/model_yolov5/yolov5-master-2--main/yolov5-master')
 import torch
 from pathlib import Path
 from models.common import DetectMultiBackend
