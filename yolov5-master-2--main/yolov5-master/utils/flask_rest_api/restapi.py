@@ -6,7 +6,8 @@ from PIL import Image
 from io import BytesIO
 import boto3
 import uuid
-
+import sys
+sys.path.insert(0, './yolov5')
 # YOLOv5 모델 로드 (경로는 EC2에 클론한 리포지토리의 위치에 맞게 설정)
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='/home/ubuntu/model_yolov5/best.pt', force_reload=True)
 
